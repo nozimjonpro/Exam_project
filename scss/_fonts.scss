@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/public-sans-v7-latin-regular.eot'); 
+    src: local(''),
+         url('../fonts/public-sans-v7-latin-regular.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/public-sans-v7-latin-regular.woff2') format('woff2'), 
+         url('../fonts/public-sans-v7-latin-regular.woff') format('woff'), 
+         url('../fonts/public-sans-v7-latin-regular.ttf') format('truetype'), 
+         url('../fonts/public-sans-v7-latin-regular.svg#PublicSans') format('svg'); 
+  }
+  @font-face {
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/public-sans-v7-latin-700.eot'); 
+    src: local(''),
+         url('../fonts/public-sans-v7-latin-700.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/public-sans-v7-latin-700.woff2') format('woff2'), 
+         url('../fonts/public-sans-v7-latin-700.woff') format('woff'), 
+         url('../fonts/public-sans-v7-latin-700.ttf') format('truetype'), 
+         url('../fonts/public-sans-v7-latin-700.svg#PublicSans') format('svg'); 
+  }
+
+@font-face {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/dm-serif-display-v5-latin-regular.eot'); 
+    src: local(''),
+         url('../fonts/dm-serif-display-v5-latin-regular.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/dm-serif-display-v5-latin-regular.woff2') format('woff2'), 
+         url('../fonts/dm-serif-display-v5-latin-regular.woff') format('woff'), 
+         url('../fonts/dm-serif-display-v5-latin-regular.ttf') format('truetype'), 
+         url('../fonts/dm-serif-display-v5-latin-regular.svg#DMSerifDisplay') format('svg'); 
+  }

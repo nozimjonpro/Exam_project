@@ -1,0 +1,26 @@
+
+
+.nav__list{
+  display: flex;
+  align-items: center;
+  @include reset-list;
+  margin-left: 14px;
+}
+
+.nav__item+ .nav__item{
+margin-left: 40px;
+}
+
+.nav__link{
+  font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+color: #36536B;
+opacity: 0.7;
+text-decoration: none;
+
+&:hover{
+  opacity: 1;
+}
+}
+
