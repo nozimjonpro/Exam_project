@@ -1,0 +1,24 @@
+.ready .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 96px;
+}
+
+.ready .hero__input{
+    margin-bottom: 0;
+}
+
+.ready__heading{
+    @include common-heading();
+}
+
+@media only screen and(max-width: 768px){
+    .ready .container{
+        flex-direction: column;
+    }
+
+    .ready__heading{
+        margin-bottom: 40px;
+    }
+}
