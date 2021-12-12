@@ -1,6 +1,7 @@
 .easy .container{
     display: flex;
     align-items: center;
+    margin-bottom: 150px;
 }
 
 .easy__info{
@@ -29,6 +30,7 @@
 @media only screen and(max-width: 925px){
     .easy .container{
         flex-direction: column;
+        margin-bottom: 100px;
     }
 
     .easy__info{
@@ -41,6 +43,11 @@
 }
 
 @media only screen and(max-width: 530px){
+
+.easy .container{
+    margin-bottom: 90px;
+}
+
     .easy__image{
         max-width: 410px;
         width: 100%;
@@ -49,6 +56,11 @@
 }
 
 @media only screen and(max-width: 430px){
+
+.easy .container{
+    margin-bottom: 80px;
+}
+
     .easy__image{
         max-width: 328px;
         width: 100%;
@@ -62,6 +74,11 @@
 }
 
 @media only screen and(max-width: 370px){
+
+.easy .container{
+    margin-bottom: 50px;
+}
+
     .easy__image{
         max-width: 268px;
         width: 100%;
