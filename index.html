@@ -30,15 +30,16 @@
             height="17"
           />
           <img
-          class="close__icon"
-          src="./img/close.svg"
-          alt="opening sign image"
-          width="22"
-          height="23"
-        />
+            class="close__icon"
+            src="./img/close.svg"
+            alt="opening sign image"
+            width="22"
+            height="23"
+          />
         </button>
-          <!-- Nav -->
-          <div class="right">
+
+        <!-- Nav -->
+        <div class="right">
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -51,11 +52,55 @@
                 <a href="#" class="nav__link">Contact</a>
               </li>
             </ul>
-          </nav> 
-          <a class="header__right__link" href="index.html" >Schedule a Demo</a>
+          </nav>
+          <a class="header__right__link" href="index.html">Schedule a Demo</a>
         </div>
-        </div>
+      </div>
     </header>
+
+    <!-- Main -->
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__info">
+            <h1 class="hero__heading">
+              Start building with our APIs for absolutely free.
+            </h1>
+
+            <form
+              class="hero__form"
+              action="https://echo.htmlacademy.ru/"
+              method="get"
+            >
+              <label class="hero__label"
+                >
+                <input
+                  class="hero__input"
+                  type="email"
+                  placeholder="Enter email address"
+                  required
+                />
+              </label>
+                <button class="hero__button">Schedule a Demo</button>
+                
+              
+              <span class="hero__span">Have any questions?</span>
+                <a class="hero__link" href="#">Contact Us</a>
+            </form>
+          </div>
+          <img
+            class="hero__image"
+            src="/img/hero-phone.svg"
+            srcset="./img/hero-phone.svg 1x, ./img/hero-phone@2x.svg 2x"
+            alt="Phone image which describe our API"
+            width="263"
+            height="500"
+          />
+        </div>
+      </section>
+    </main>
 
     <script src="./js/script.js"></script>
   </body>
