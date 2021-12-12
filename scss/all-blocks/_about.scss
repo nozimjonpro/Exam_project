@@ -1,0 +1,118 @@
+.about{
+    background-color: $bgColor;
+    margin-bottom: 150px;
+}
+
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px;
+}
+
+.about__info{
+    max-width: 445px;
+    width: 100%;
+    margin-right: 50px;
+}
+
+.about__heading{
+    @include common-heading(48px, 56px, $nearWhite);
+    margin-bottom: 24px;
+}
+
+.about__text{
+    margin-top: 0;
+    margin-bottom: 32px;
+    color: $nearWhite;
+    opacity: 0.7;
+}
+
+.about__link{
+    display: inline-block;
+    width: 129px;
+    padding: 16px;
+    text-align: center;
+    font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+color: $nearWhite;
+text-decoration: none;
+border: 1px solid $nearWhite;
+border-radius: 24px;
+}
+
+.about__list{
+    max-width: 536px;
+    width: 100%;
+    @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+}
+
+@media only screen and(max-width: 1000px){
+    .about__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and(max-width: 875px){
+    .about .container{
+        position: relative;
+        flex-direction: column;
+        padding: 88px 20px;
+    }
+
+    .about__list{
+        position: absolute;
+        top: 88px;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+
+    .about__info{
+        max-width: 457px;
+        width: 100%;
+        text-align: center;
+        padding-top: 160px;
+        margin-right: 0;
+    }
+}
+
+@media only screen and(max-width: 530px){
+    .about__list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about__info{
+        padding-top: 250px;
+    }
+
+    .about__heading{
+        @include common-heading(40px, 40px, $nearWhite);
+        margin-bottom: 24px;
+    }
+
+    .about__text{
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media only screen and(max-width: 425px){
+
+.about .container{
+    padding: 80px 20px;
+}
+
+    .about__heading{
+        @include common-heading(32px, 36px, $nearWhite);
+        margin-bottom: 16px;
+    }
+}
+
+
+
+
+

@@ -1,21 +1,27 @@
+.hero{
+    position: relative;
+}
+
 .hero .container {
 //   position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 75px;
-//   &::before {
-//     position: absolute;
-//     top: -336px;
-//     right: -305px;
-//     content: "";
-//     width: 780px;
-//     height: 780px;
-//     display: block;
-//     background: url(/img/sfera.png);
-//     background-repeat: no-repeat;
-//     background-size: 780px;
+  &::before {
+    position: absolute;
+    top: -285px;
+    right: 0;
+    // top: -336px
+    right: 0;
+    content: "";
+    width: 780px;
+    height: 780px;
+    display: block;
+    background: url(/img/circle.png);
+    background-repeat: no-repeat;
+    background-size: 780px;
     
-//   }
+  }
 }
 
 .hero__info {
@@ -84,6 +90,13 @@
 }
 
 @media only screen and(max-width: 1040px){
+
+.hero .container{
+    &::before{
+        top: -400px;
+    }
+}
+
     .hero__info{
         margin-right: 80px;
     }
