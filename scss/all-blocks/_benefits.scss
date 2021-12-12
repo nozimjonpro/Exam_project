@@ -1,0 +1,89 @@
+.benefits .container{
+    margin-bottom: 150px;
+}
+
+.benefits__list{
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefits__item+ .benefits__item{
+    margin-left: 10px;
+}
+
+.benefits__item{
+
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+
+    &:first-child::before{
+        content: '';
+        display: block;
+        width: 106px;
+        height: 106px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+        background-image: url(/img/money.svg);
+        background-repeat: no-repeat;
+        background-size: 106px;
+    }
+
+    &:nth-child(2)::before{
+        content: '';
+        display: block;
+        width: 106px;
+        height: 106px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+        background-image: url(/img/progress.svg);
+        background-repeat: no-repeat;
+        background-size: 106px;
+    }
+
+    &:last-child::before{
+        content: '';
+        display: block;
+        width: 106px;
+        height: 106px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+        background-image: url(/img/card.svg);
+        background-repeat: no-repeat;
+        background-size: 106px;
+    }
+}
+
+.benefits__heading{
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: bold;
+    color: $headingColor;
+}
+
+.benefits__text{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $textColor;
+}
+
+@media only screen and(max-width: 792px){
+    .benefits__list{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .benefits__item{
+        max-width: 573px;
+        width: 100%;
+    }
+
+    .benefits__item+ .benefits__item{
+        margin-left: 0;
+        margin-top: 48px;
+    }
+}
+
+
